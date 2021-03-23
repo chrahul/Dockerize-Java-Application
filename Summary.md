@@ -4,9 +4,11 @@
 
 **Workflow** 
 
-![image-20210323222415716](C:\Users\rachaube\AppData\Roaming\Typora\typora-user-images\image-20210323222415716.png)
+![img](https://cdn-images-1.medium.com/max/1200/1*4sU001_sDsFE8VG-4FbgMA.png)
 
-What is the JAVA code
+
+
+**What is the JAVA code**
 
 Application: Java Application
 Frame Work: Spring Boot
@@ -77,7 +79,7 @@ Multiple FROM statements, each FROM statement can use a different base and each 
 
 
 
-![](C:\Users\rachaube\AppData\Roaming\Typora\typora-user-images\image-20210323222519786.png)
+![img](https://cdn-images-1.medium.com/max/1200/1*Te7au1Sib28MU_XPutLtTw.png)
 
 
 
@@ -116,7 +118,7 @@ docker container run -p <host_port>:<container_port>
 
 Google publishes Jib as both a Maven and a Gradle plugin. This is nice because it means that Jib will catch any changes we make to our application each time we build.
 
-Docker daemon is not needed to build the image, I.E. No need to write the Dockefile :-)
+Docker daemon is not needed to build the image. No need to write the Dockefile :-)
 
 
 
@@ -125,3 +127,4 @@ Docker daemon is not needed to build the image, I.E. No need to write the Dockef
 https://docs.docker.com/
 https://docs.docker.com/engine/reference/builder/
 https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+https://github.com/GoogleContainerTools/jib
