@@ -1,8 +1,6 @@
-= Chapter 2: Packaging Application using Docker
+= Step# 2: Packaging Application using Docker
 
 == 2.1 Docker Workflow
-
-**Slides**
 
 . Explain the Docker workflow of CLI, Engine and Registry
 
@@ -48,7 +46,7 @@ CMD java -version
 
 . Create Docker image:
 
-	docker image build -t arungupta/greeting .
+	docker image build -t rahulch/greeting .
 
 . Show Docker image:
 
@@ -58,7 +56,7 @@ CMD java -version
 
 . Run container and show logs:
 
-    docker container run -p 8080:8080 arungupta/greeting
+    docker container run -p 8080:8080 rahulch/greeting
 
 . Access application:
 
@@ -75,7 +73,7 @@ CMD java -version
 
 . Alternatively, start the container:
 
-	docker container run -p 8080:8080 --name greeting -d arungupta/greeting
+	docker container run -p 8080:8080 --name greeting -d rahulch/greeting
 
 . Show logs:
 
@@ -121,10 +119,10 @@ Alternatively, Jib can also build without Docker daemon, and directly to a regis
 
 **Prereq**
 
-. Create an Ubuntu EC2 instance
+. Create an Ubuntu Azure VM
 . Login:
 
-	ssh -i ~/.ssh/arun-us-east1.pem ubuntu@ec2-3-84-85-248.compute-1.amazonaws.com
+	ssh <vm>
 
 . Install default JDK:
 
@@ -133,7 +131,7 @@ Alternatively, Jib can also build without Docker daemon, and directly to a regis
 
 . Clone the repo:
 
-	git clone https://github.com/arun-gupta/lil-kubernetes-for-java
+	git clone <>
 
 . Build the application:
 

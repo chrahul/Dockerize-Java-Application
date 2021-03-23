@@ -1,18 +1,6 @@
-= Chapter 1: Introduction and Application
+= Step1: Run the Java Application on a Ubuntu box
 
-== 1.1 Introduction
-
-**Slides**
-
-. Why Kubernetes?
-
-== 1.2 Kubernetes Workflow for Java Developers
-
-**Slides**
-
-. Workflow for Java + K8s
-
-== 1.3 Build and Test Application using Maven
+== Build and Test Application using Maven
 
 We will use a simple Java application built using Spring Boot. The application publishes a REST endpoint that can be invoked at `http://{host}:{port}/hello`.
 
