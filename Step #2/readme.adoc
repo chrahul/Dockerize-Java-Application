@@ -113,7 +113,7 @@ Alternatively, Jib can also build without Docker daemon, and directly to a regis
 +
 . Show image history:
 
-	docker image history arungupta/greeting
+	docker image history rahulch/greeting
 
 == 2.6 Minimal Docker Image using Custom JRE
 
@@ -147,7 +147,7 @@ Alternatively, Jib can also build without Docker daemon, and directly to a regis
 
 	mvn -Dmaven.repo.local=./repository clean package
 	tar cf repository.tar.gz ./repository
-	sudo docker image build -t arungupta/greeting .
+	sudo docker image build -t rahulch/greeting .
 
 **Code**
 
@@ -166,18 +166,18 @@ jlink is a tool available in JDK 9 onwards, and allows to assemble and optimize 
 
 . Build Docker image using this custom JRE:
 
-	sudo docker image build -f Dockerfile.jre -t arungupta/greeting:jre-slim .
+	sudo docker image build -f Dockerfile.jre -t rahulch/greeting:jre-slim .
 
 . List Docker images and show the difference in sizes:
 
 	ubuntu@ip-172-31-35-132:~$ sudo docker image ls
 	REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
-	arungupta/greeting   jre-slim            4334d1ebec46        2 minutes ago       160MB
-	arungupta/greeting   latest              079dd8de2731        5 minutes ago       489MB
+	rahulch/greeting   jre-slim            4334d1ebec46        2 minutes ago       160MB
+	rahulch/greeting   latest              079dd8de2731        5 minutes ago       489MB
 
 . Run the container:
 
-	sudo docker container run -d -p 8080:8080 arungupta/greeting:jre-slim
+	sudo docker container run -d -p 8080:8080 rahulch/greeting:jre-slim
 
 . Access the application:
 
